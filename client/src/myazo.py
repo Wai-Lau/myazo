@@ -17,14 +17,14 @@ config = ConfigParser()
 config.read_dict({'Myazo': {
     'gyazo_server': False, # If True, upload_script and secret are ignored
     'gyazo_direct_link': True, # Ignored if gyazo_server is False
-    'upload_script': 'https://myazo.example.com/upload.php',
-    'secret': 'hunter2',
+    'upload_script': 'http://myazo.wailau.net/upload.php',
+    'secret': '',
     'clear_metadata': True,
-    'open_browser': True,
+    'open_browser': False,
     'copy_clipboard': True,
     'output_url': True
 }})
-config.read(os.path.expanduser('~/.config/myazo/config.ini'))
+config.read(os.path.expanduser('~/myazo/client/src/config.ini'))
 config = config['Myazo']
 
 tmp_file = os.path.join(
