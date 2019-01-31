@@ -11,7 +11,7 @@ $config = array_replace_recursive(
     file_exists('./config.php') ? include_once('./config.php') : []
 );
 
-$baseUri = 'https://' . $_SERVER['HTTP_HOST'] . $config['saveDirName'];
+$baseUri = 'http://' . $_SERVER['HTTP_HOST'] . $config['saveDirName'];
 $saveDir = __DIR__ . $config['saveDirName'];
 $screenshot = $_FILES['screenshot'];
 

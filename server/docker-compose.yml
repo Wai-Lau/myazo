@@ -8,9 +8,5 @@ services:
     ports:
       - 80:80
     volumes:
-      - myazo-data:/app/public/data
-
-volumes:
-  myazo-data:
-    driver: local
+      - ./src/:/app/
 
